@@ -1,0 +1,80 @@
+.race-interface {
+   padding-top: 40px;
+   max-width: fit-content;
+   & *._race__lock{
+      pointer-events: none;
+      background-color: rgb(129, 129, 129);
+   }
+   & button{
+      user-select: none;
+   }
+   // .race-interface__inputs
+   &__inputs {
+      &:not(:last-child){
+         margin-bottom: 15px;
+      }
+      
+      & input {
+         outline: none;
+         border: 1px solid #000;
+         padding: 5px 7px;
+         height:30px;
+      }
+   }
+   // .race-interface__body
+   &__body {
+      &:not(:last-child){
+         margin-bottom: 15px;
+      }
+      display: flex;
+      column-gap: 10px;
+   }
+
+   & button {
+      background-color: #fff;
+      text-transform: uppercase;
+      padding: 5px 7px;
+      border: 1px solid rgb(148, 143, 143);
+   }
+}
+.car-create {
+   // .car-create__name
+   &__name {
+   }
+   // .car-create__color
+   &__color {
+   }
+   // .car-create__button
+   &__button {
+   }
+}
+.car-update {
+   // .car-update__name
+   &__name {
+   }
+   // .car-update__color
+   &__color {
+   }
+   // .car-update__button
+   &__button {
+   }
+}
+.buttons-interface {
+   display: flex;
+   width: 100%;
+
+   & button:not(:last-child){
+      margin-right: 10px;
+   }
+   // .buttons-interface__race
+   &__race {
+   }
+   // .buttons-interface__reset
+   &__reset {
+   }
+   // .buttons-interface__generate-cards
+   &__generate-cards {
+      display: block;
+     margin-left: auto;
+   }
+}
