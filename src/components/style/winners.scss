@@ -1,0 +1,115 @@
+.winners {
+   padding-top: 40px;
+   &.hidden{
+      transform: scale(0);
+      overflow: hidden;
+      pointer-events: none;
+      position: absolute;
+      width: 0px;
+      height: 0px;
+   }
+   // .winners__count
+   &__count {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+   }
+   &__page {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+   }
+   // .winners__table
+   &__table {
+   }
+}
+.table-winners {
+   // .table-winners__page
+   &__page {
+   }
+   // .table-winners__inner
+   &__inner {
+      max-width: 700px;
+   }
+
+   // .table-winners__head
+   &__head {
+      display: flex;
+
+      font-size: 16px;
+      font-weight: 600;
+      padding-bottom: 10px;
+      margin-bottom:10px ;
+
+      position: relative;
+      &::after{
+         content:'';
+         display: block;
+         position: absolute;
+         bottom: 0px;
+         left: -2.5%;
+         width: 105%;
+         height: 3px;
+         background-color: rgb(23, 23, 23);
+         border-radius: 50%;
+      }
+   }
+   &__winer{
+      display: flex;
+   }
+   // .table-winners__number
+   &__number {
+      width: 12%;
+      cursor: pointer;
+   }
+   // .table-winners__car
+   &__car {
+      width: 18%;
+   }
+   // .table-winners__name
+   &__name {
+      width: 25%;
+   }
+   // .table-winners__wins
+   &__wins {
+      width: 10%;
+      cursor: pointer;
+   }
+   // .table-winners__best-time
+   &__best-time {
+      width: 25%;
+      cursor: pointer;
+   }
+
+   &__best-time,
+   &__wins,
+   &__number {
+      position: relative;
+&::after{
+   content:'';
+   position: absolute;
+   top: 0;
+   right: 5px;
+}
+     
+}  
+&__best-time._arrow-up,
+&__wins._arrow-up,
+&__number._arrow-up {
+
+   &::after{
+      content: '\1F815';
+      display: block;
+   }
+
+}  
+
+&__best-time._arrow-down,
+&__wins._arrow-down,
+&__number._arrow-down {
+  &::after{
+   content: '\1F817';
+      display: block;
+   }
+}  
+}

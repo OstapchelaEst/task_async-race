@@ -1,0 +1,21 @@
+.select-page {
+   display: flex;
+   column-gap: 20px;
+   & button{
+      display: block;
+      padding: 10px 15px;
+      background-color: #fff;
+      border: 1px solid #000;
+      
+   }
+   & button._lock{
+      background-color: #818181;
+      pointer-events: none;
+   }
+   // .select-page__race
+   &__race {
+   }
+   // .select-page__winners
+   &__winners {
+   }
+}

@@ -1,0 +1,26 @@
+[class*="track-car__pictyre"]{
+   width: fit-content;
+position: absolute;
+left: 0;
+bottom: -5px;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+   @keyframes car-race {
+      0% {
+        // transform: translateX(0%);
+        left: 0;
+        transform: translateX(0%);
+      }
+      100%{
+         left: 100%;
+         transform: translateX(-100%);
+        // transform: translateX(92%);       
+      }
+   }
+}
+
+.track-car__body-pictyre{
+   width: 100%;
+   position: relative;
+}
+
